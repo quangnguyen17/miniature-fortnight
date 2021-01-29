@@ -1,0 +1,48 @@
+{
+	"env": {
+		"jest": true,
+		"es6": true
+	},
+	"extends": ["react-app", "google", "plugin:import/errors", "plugin:import/warnings", "plugin:prettier/recommended"],
+	"plugins": ["fp"],
+	"rules": {
+		"no-eval": "error",
+		"max-lines": ["warn", 500],
+		"max-lines-per-function": ["warn", 80],
+		"complexity": ["warn", 5],
+		"max-nested-callbacks": ["warn", 2],
+		"max-depth": ["warn", 3],
+		"fp/no-mutation": "warn",
+		"no-param-reassign": "error",
+		"fp/no-mutating-assign": "error",
+		"fp/no-mutating-methods": "error",
+		"fp/no-delete": "error",
+		"fp/no-loops": "warn",
+		"max-params": ["error", 3],
+		"import/first": "error",
+		"quotes": ["error", "single", "avoid-escape"],
+		"indent": "off",
+		"semi": ["error", "always"],
+		"camelcase": [
+			0,
+			{
+				"properties": "never"
+			}
+		],
+		"max-len": ["error", 120],
+		"linebreak-style": ["error", "unix"],
+		"require-jsdoc": "off",
+		"valid-jsdoc": "off",
+		"no-namespace": "off",
+		"no-console": "error",
+		"no-default-export": "off",
+		"no-named-export": "off",
+		"new-cap": "off"
+	},
+	"settings": {
+		"import/resolver": {
+			"babel-module": {},
+			"typescript": {}
+		}
+	}
+}
